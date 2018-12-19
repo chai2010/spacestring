@@ -23,14 +23,14 @@ import (
 )
 
 func main() {
-	// nil string contains more than 1 space characters
+	// space string contains more than 1 space characters
 	fmt.Println(spacestring.IsSpace(" "))
 	fmt.Println(spacestring.IsSpace(" \t\n\r"))
 
-	// empty string is not nil string
+	// empty string is not space string
 	fmt.Println(spacestring.IsSpace(""))
 
-	// non space string is not nil string
+	// non space string is not space string
 	fmt.Println(spacestring.IsSpace(" abc "))
 
 	// Output:
